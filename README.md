@@ -23,6 +23,11 @@ what parameters accompany them:
 opening the socket. Accepts one parameter:
 * `name`: Real name of Bot owner
 
+### WELCOME
+(server -> client) The reply to a JOINGAME. This is a positive acknowledgement
+that your client has a space in the upcoming game. Contains
+* `you`: Your Player ID that was just assigned to you by the server.
+
 ### ROUNDSTART
 (server -> client) Denotes the beginning of a round. Accompanying this message:
 * `you`: Your Player ID
