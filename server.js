@@ -48,16 +48,12 @@ var server = net.createServer(function(c) {
           giveError(c, "You are not the correct player!");
           return;
         }
-        /*
-         * TO IMPLEMENT...
-         * Pushing for Brian's convenience.
-         * if (!game.isValidMove(t)) {
+         if (!game.isValidMove(t)) {
           giveError(c, "Invalid Play!");
           return;
+        } else {
+          game.submitMove(t);
         }
-        if (!game.submitMove(t)) {
-        }
-        */
         break;
       default:
         giveError(c, "Invalid type.");
