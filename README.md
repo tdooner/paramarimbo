@@ -50,3 +50,7 @@ client.
 * `string`: String describing the reason for the gameover. Could be a timeout,
   or because someone has won.
 * `winningplayer`: Player ID of the winning player, if someone has won.
+
+### ERROR
+Your last input to the server was bad.
+* `message`: Text description of what went wrong.
